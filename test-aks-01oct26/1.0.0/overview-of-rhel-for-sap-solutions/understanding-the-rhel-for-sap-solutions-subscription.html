@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Understanding the RHEL for SAP Solutions subscription :: SAP on RHEL</title>
+    <link rel="prev" href="introduction-to-red-hat-enterprise-linux-for-sap.html">
+    <link rel="next" href="../red-hat-portfolio-for-sap/red-hat-portfolio-for-sap.html">
+    <meta name="generator" content="Antora 3.2.0-alpha.12">
+    <link rel="stylesheet" href="../../../_/css/site.css">
+    <link rel="stylesheet" href="../../../_/css/vendor/tabs.css">
+    <link rel="stylesheet" href="../../../_/css/vendor/collapsible.css">
+    <link rel="stylesheet" href="../../../_/css/vendor/reading-time.css">
+    <link rel="stylesheet" href="../../../_/css/vendor/audio-transcript.css">
+    <script>var uiRootPath = '../../../_'</script>
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="https://www.redhat.com" target="_blank"><img src="../../../_/img/redhat-logo.png" height="40px" alt="Red Hat"></a>
+      <a class="navbar-item" style="font-size: 24px; color: white" href="../../..">SAP on RHEL</a>
+      <div class="navbar-item search hide-for-print">
+        <div id="search-field" class="field">
+          <input id="search-input" type="text" placeholder="Search the docs">
+        </div>
+      </div>
+      <button class="navbar-burger" data-target="topbar-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="https://github.com/RedHatQuickCourses/REPLACEREPONAME/issues" target="_blank">Report Issues</a>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="test-aks-01oct26" data-version="1.0.0">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <h3 class="title"><a href="../index.html">SAP on RHEL</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../index.html">Home</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../LABENV/index.html">Lab Environment</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="overview-of-rhel-for-sap-solutions.html">Overview of RHEL for SAP Solutions</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="introduction-to-red-hat-enterprise-linux-for-sap.html">Introduction to Red Hat Enterprise Linux for SAP</a>
+  </li>
+  <li class="nav-item is-current-page" data-depth="2">
+    <a class="nav-link" href="understanding-the-rhel-for-sap-solutions-subscription.html">Understanding the RHEL for SAP Solutions subscription</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../red-hat-portfolio-for-sap/red-hat-portfolio-for-sap.html">Red Hat Portfolio for SAP</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../red-hat-portfolio-for-sap/open-hybrid-cloud-strategy-for-sap-workloads.html">Open Hybrid Cloud strategy for SAP workloads</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../sap-hana-infrastructure/sap-hana-infrastructure.html">SAP HANA Infrastructure</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../sap-hana-infrastructure/sap-hana-on-rhel-architecture-requirements.html">SAP HANA on RHEL architecture requirements</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../appendix/appendix.html">Appendix</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">SAP on RHEL</span>
+    <span class="version">1.0.0</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <a class="title" href="../index.html">SAP on RHEL</a>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="../index.html">1.0.0</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="../index.html" class="home-link"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="../index.html">SAP on RHEL</a></li>
+    <li><a href="overview-of-rhel-for-sap-solutions.html">Overview of RHEL for SAP Solutions</a></li>
+    <li><a href="understanding-the-rhel-for-sap-solutions-subscription.html">Understanding the RHEL for SAP Solutions subscription</a></li>
+  </ul>
+</nav>
+</div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<h1 class="page">Understanding the RHEL for SAP Solutions subscription</h1>
+<h1 id="_understanding_the_rhel_for_sap_solutions_subscription" class="sect0"><a class="anchor" href="#_understanding_the_rhel_for_sap_solutions_subscription"></a>Understanding the RHEL for SAP Solutions subscription</h1>
+<div class="paragraph">
+<p>The RHEL for SAP Solutions subscription is more than just an operating system license; it is an integrated, specialized platform designed to meet the rigorous performance, reliability, and lifecycle requirements of SAP environments. By consolidating essential components into a single subscription, Red Hat enables organizations to build a standardized, automated, and resilient foundation for their SAP Digital Core.</p>
+</div>
+<div class="sect1">
+<h2 id="_subscription_components"><a class="anchor" href="#_subscription_components"></a>Subscription Components</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The RHEL for SAP Solutions subscription provides a comprehensive bundle of software and services designed to streamline the deployment and management of SAP workloads. Key components include:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Red Hat Enterprise Linux (RHEL):</strong> The core, hardened Linux distribution that serves as the foundation for SAP NetWeaver and SAP HANA workloads.</p>
+</li>
+<li>
+<p><strong>High Availability (HA) Add-on:</strong> A robust clustering framework specifically engineered to support SAP-certified high-availability configurations, ensuring minimal downtime for critical SAP services.</p>
+</li>
+<li>
+<p><strong>Red Hat Smart Management:</strong> Provides integrated lifecycle management, allowing administrators to manage software patches and security updates across large-scale RHEL deployments.</p>
+</li>
+<li>
+<p><strong>Red Hat Insights:</strong> A predictive analytics tool that continuously monitors system health, offering proactive risk assessment and automated mitigation strategies to identify potential issues before they impact business operations.</p>
+</li>
+<li>
+<p><strong>RHEL System Roles for SAP:</strong> A collection of Ansible-based roles that automate the complex configuration tasks required to prepare a RHEL environment for SAP applications, adhering to SAP-specific best practices.</p>
+</li>
+<li>
+<p><strong>SAP-Specific Software Components:</strong> Includes pre-configured libraries and kernel tuning parameters required to meet the SAP "Tuning Guide" requirements for optimal performance.</p>
+</li>
+<li>
+<p><strong>Update Services for SAP Solutions (E4S):</strong> A critical feature for SAP environments that provides long-term support for specific minor RHEL releases (for four years from General Availability), allowing for more flexible maintenance windows and reduced update frequency.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_value_proposition_the_open_hybrid_cloud"><a class="anchor" href="#_value_proposition_the_open_hybrid_cloud"></a>Value Proposition: The Open Hybrid Cloud</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>By leveraging this subscription, organizations can execute an Open Hybrid Cloud strategy. Because the subscription is consistent across on-premises, private, and public cloud environments, SAP customers can:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p><strong>Standardize infrastructure:</strong> Use the same RHEL foundation regardless of the deployment site.</p>
+</li>
+<li>
+<p><strong>Automate operations:</strong> Integrate with Red Hat Ansible Automation Platform to orchestrate SAP S/4HANA migrations and day-2 operations.</p>
+</li>
+<li>
+<p><strong>Ensure Compliance:</strong> Utilize the included management tools to maintain consistency across the entire SAP landscape.</p>
+</li>
+</ol>
+</div>
+<div class="sect2">
+<h3 id="_hands_on_activity_verifying_subscription_benefits"><a class="anchor" href="#_hands_on_activity_verifying_subscription_benefits"></a>Hands-on Activity: Verifying Subscription Benefits</h3>
+<div class="paragraph">
+<p>In this exercise, you will confirm your system is correctly registered and configured to access the SAP-specific repositories provided by your subscription.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>Ensure your system is registered with Red Hat Subscription Management (RHSM) before beginning this activity.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p><strong>Check Registration Status</strong>
+Execute the following command to verify your system is registered and the subscription is attached:
+[source,bash]
+----
+subscription-manager status
+----</p>
+</li>
+<li>
+<p><strong>Enable SAP-Specific Repositories</strong>
+The subscription provides specialized repositories. Verify and enable the required repositories for your RHEL version:
+[source,bash]
+----
+# List available repositories to find the SAP-specific ones
+subscription-manager repos --list | grep -i "sap"</p>
+<div class="literalblock">
+<div class="content">
+<pre># Enable the RHEL for SAP Solutions repository (example for RHEL 8)
+subscription-manager repos --enable=rhel-8-for-x86_64-sap-solutions-rpms
+----</pre>
+</div>
+</div>
+</li>
+<li>
+<p><strong>Verify Insights Connectivity</strong>
+To leverage the proactive optimization features of your subscription, ensure the Red Hat Insights client is active:
+[source,bash]
+----
+insights-client --register
+----</p>
+</li>
+<li>
+<p><strong>Validate Automation Readiness</strong>
+Confirm that the <code>rhel-system-roles</code> package is installed to begin automating your SAP configurations:
+[source,bash]
+----
+dnf install rhel-system-roles
+----</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>By completing these steps, you have ensured that your environment is properly configured to leverage the support and automation capabilities unique to the RHEL for SAP Solutions subscription.</p>
+</div>
+</div>
+</div>
+</div>
+<nav class="pagination">
+  <span class="prev"><a href="introduction-to-red-hat-enterprise-linux-for-sap.html">Introduction to Red Hat Enterprise Linux for SAP</a></span>
+  <span class="next"><a href="../red-hat-portfolio-for-sap/red-hat-portfolio-for-sap.html">Red Hat Portfolio for SAP</a></span>
+</nav>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer">
+  <img src="../../../_/img/rhl-logo-red.png" height="40px" alt="Red Hat"  href="https://redhat.com" >
+</footer><script id="site-script" src="../../../_/js/site.js" data-ui-root-path="../../../_"></script>
+<script async src="../../../_/js/vendor/highlight.js"></script>
+<script defer src="../../../_/js/vendor/tabs.js"></script>
+<script defer src="../../../_/js/vendor/reading-time.js"></script>
+<script src="../../../_/js/vendor/lunr.js"></script>
+<script src="../../../_/js/search-ui.js" id="search-ui-script" data-site-root-path="../../.." data-snippet-length="100" data-stylesheet="../../../_/css/search.css"></script>
+<script async src="../../../search-index.js"></script>
+  </body>
+</html>

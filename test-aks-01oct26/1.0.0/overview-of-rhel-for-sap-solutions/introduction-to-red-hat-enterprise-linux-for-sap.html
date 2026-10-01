@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Introduction to Red Hat Enterprise Linux for SAP :: SAP on RHEL</title>
+    <link rel="prev" href="overview-of-rhel-for-sap-solutions.html">
+    <link rel="next" href="understanding-the-rhel-for-sap-solutions-subscription.html">
+    <meta name="generator" content="Antora 3.2.0-alpha.12">
+    <link rel="stylesheet" href="../../../_/css/site.css">
+    <link rel="stylesheet" href="../../../_/css/vendor/tabs.css">
+    <link rel="stylesheet" href="../../../_/css/vendor/collapsible.css">
+    <link rel="stylesheet" href="../../../_/css/vendor/reading-time.css">
+    <link rel="stylesheet" href="../../../_/css/vendor/audio-transcript.css">
+    <script>var uiRootPath = '../../../_'</script>
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="https://www.redhat.com" target="_blank"><img src="../../../_/img/redhat-logo.png" height="40px" alt="Red Hat"></a>
+      <a class="navbar-item" style="font-size: 24px; color: white" href="../../..">SAP on RHEL</a>
+      <div class="navbar-item search hide-for-print">
+        <div id="search-field" class="field">
+          <input id="search-input" type="text" placeholder="Search the docs">
+        </div>
+      </div>
+      <button class="navbar-burger" data-target="topbar-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="https://github.com/RedHatQuickCourses/REPLACEREPONAME/issues" target="_blank">Report Issues</a>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="test-aks-01oct26" data-version="1.0.0">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <h3 class="title"><a href="../index.html">SAP on RHEL</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../index.html">Home</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../LABENV/index.html">Lab Environment</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="overview-of-rhel-for-sap-solutions.html">Overview of RHEL for SAP Solutions</a>
+<ul class="nav-list">
+  <li class="nav-item is-current-page" data-depth="2">
+    <a class="nav-link" href="introduction-to-red-hat-enterprise-linux-for-sap.html">Introduction to Red Hat Enterprise Linux for SAP</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="understanding-the-rhel-for-sap-solutions-subscription.html">Understanding the RHEL for SAP Solutions subscription</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../red-hat-portfolio-for-sap/red-hat-portfolio-for-sap.html">Red Hat Portfolio for SAP</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../red-hat-portfolio-for-sap/open-hybrid-cloud-strategy-for-sap-workloads.html">Open Hybrid Cloud strategy for SAP workloads</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../sap-hana-infrastructure/sap-hana-infrastructure.html">SAP HANA Infrastructure</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../sap-hana-infrastructure/sap-hana-on-rhel-architecture-requirements.html">SAP HANA on RHEL architecture requirements</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../appendix/appendix.html">Appendix</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">SAP on RHEL</span>
+    <span class="version">1.0.0</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <a class="title" href="../index.html">SAP on RHEL</a>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="../index.html">1.0.0</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="../index.html" class="home-link"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="../index.html">SAP on RHEL</a></li>
+    <li><a href="overview-of-rhel-for-sap-solutions.html">Overview of RHEL for SAP Solutions</a></li>
+    <li><a href="introduction-to-red-hat-enterprise-linux-for-sap.html">Introduction to Red Hat Enterprise Linux for SAP</a></li>
+  </ul>
+</nav>
+</div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<h1 class="page">Introduction to Red Hat Enterprise Linux for SAP</h1>
+<h1 id="_introduction_to_red_hat_enterprise_linux_for_sap" class="sect0"><a class="anchor" href="#_introduction_to_red_hat_enterprise_linux_for_sap"></a>Introduction to Red Hat Enterprise Linux for SAP</h1>
+<div class="paragraph">
+<p>Red Hat Enterprise Linux (RHEL) for SAP Solutions is a purpose-built operating system environment designed to meet the rigorous performance, stability, and reliability requirements of SAP workloads. As organizations migrate to SAP S/4HANA or modernize their existing Digital Core, RHEL serves as the foundation for an Open Hybrid Cloud strategy, allowing for consistent operations across on-premises data centers and public cloud providers.</p>
+</div>
+<div class="sect1">
+<h2 id="_why_rhel_for_sap"><a class="anchor" href="#_why_rhel_for_sap"></a>Why RHEL for SAP?</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>SAP applications are mission-critical, often serving as the central nervous system of an enterprise. Deploying these workloads on standard Linux distributions can lead to performance bottlenecks or lack of specialized support. RHEL for SAP Solutions addresses these challenges by bundling critical components specifically tuned for the SAP ecosystem.</p>
+</div>
+<div class="paragraph">
+<p>Unlike a generic OS, the RHEL for SAP Solutions subscription provides an automated, end-to-end infrastructure specifically engineered to minimize downtime, simplify management, and ensure compliance with SAP’s technical requirements.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_key_components_of_the_rhel_for_sap_portfolio"><a class="anchor" href="#_key_components_of_the_rhel_for_sap_portfolio"></a>Key Components of the RHEL for SAP Portfolio</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The RHEL for SAP Solutions subscription is more than just an OS; it is a comprehensive suite of tools designed to manage the entire lifecycle of an SAP environment:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Red Hat Enterprise Linux:</strong> The core, stable foundation optimized for high-performance enterprise applications.</p>
+</li>
+<li>
+<p><strong>High Availability (HA) Add-on:</strong> Provides the clustering framework necessary to ensure SAP services (like SAP HANA or SAP NetWeaver) remain operational during hardware or service failures.</p>
+</li>
+<li>
+<p><strong>Red Hat Smart Management:</strong> Simplifies lifecycle management, allowing administrators to manage patch levels and configurations across large-scale SAP environments.</p>
+</li>
+<li>
+<p><strong>Red Hat Insights:</strong> An analytics-driven tool that provides proactive optimization, identifies security risks, and suggests automated mitigations before they impact production performance.</p>
+</li>
+<li>
+<p><strong>RHEL System Roles for SAP:</strong> Pre-defined automation roles that enforce consistent configurations (such as kernel parameters and storage tuning) to match SAP best practices during deployment.</p>
+</li>
+<li>
+<p><strong>SAP-specific Software Components:</strong> Optimized libraries and configurations tailored for SAP workload requirements.</p>
+</li>
+<li>
+<p><strong>Update Services for SAP Solutions:</strong> Offers extended support for specific minor RHEL releases—four years from General Availability—enabling SAP customers to maintain stable operating environments while managing longer update cycles.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_automation_with_ansible"><a class="anchor" href="#_automation_with_ansible"></a>Automation with Ansible</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Beyond the OS components, Red Hat facilitates the full automation of SAP S/4HANA migrations and Day-2 operations through the integration with the <strong>Red Hat Ansible Automation Platform</strong>. By combining RHEL for SAP Solutions with Ansible, IT teams can transform manual, error-prone deployment processes into repeatable, standardized workflows, significantly reducing the "time-to-value" for new SAP initiatives.</p>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>For organizations scaling their SAP footprint, leveraging <strong>Red Hat Insights</strong> is crucial. It acts as a continuous health-check tool, mapping your RHEL configuration directly against known SAP support notes and security advisories to prevent potential outages.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_hands_on_activity_identifying_sap_specific_components"><a class="anchor" href="#_hands_on_activity_identifying_sap_specific_components"></a>Hands-on Activity: Identifying SAP-Specific Components</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>In this activity, you will verify if the necessary SAP-specific repositories are enabled on your RHEL system.</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p><strong>Prerequisites</strong></p>
+<div class="ulist">
+<ul>
+<li>
+<p>A system registered with a valid RHEL for SAP Solutions subscription.</p>
+</li>
+<li>
+<p>Root or <code>sudo</code> access.</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p><strong>Step 1: Check enabled repositories</strong>
+Run the following command to view your currently enabled repositories and ensure the SAP-specific repos are active:</p>
+</li>
+</ol>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>subscription-manager repos --list-enabled | grep -i sap</pre>
+</div>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p><strong>Step 2: Verify SAP-tuned profiles</strong>
+RHEL for SAP includes pre-configured <code>tuned</code> profiles. Check which profiles are available for your environment:</p>
+</li>
+</ol>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>tuned-adm list</pre>
+</div>
+</div>
+<div class="paragraph">
+<p><strong>Look for profiles prefixed with <code>sap-</code> (e.g., <code>sap-hana</code> or <code>sap-netweaver</code>). These profiles automatically adjust kernel parameters, disk I/O schedulers, and memory settings to align with SAP&#8217;s performance requirements.</strong></p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p><strong>Step 3: Apply an SAP profile</strong>
+If your server is hosting an SAP HANA database, apply the SAP HANA tuned profile:</p>
+</li>
+</ol>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>sudo tuned-adm profile sap-hana</pre>
+</div>
+</div>
+<div class="paragraph">
+<p><strong>By executing these steps, you have ensured that your OS is not just running, but is specifically optimized for the SAP HANA workload requirements.</strong></p>
+</div>
+</div>
+</div>
+<nav class="pagination">
+  <span class="prev"><a href="overview-of-rhel-for-sap-solutions.html">Overview of RHEL for SAP Solutions</a></span>
+  <span class="next"><a href="understanding-the-rhel-for-sap-solutions-subscription.html">Understanding the RHEL for SAP Solutions subscription</a></span>
+</nav>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer">
+  <img src="../../../_/img/rhl-logo-red.png" height="40px" alt="Red Hat"  href="https://redhat.com" >
+</footer><script id="site-script" src="../../../_/js/site.js" data-ui-root-path="../../../_"></script>
+<script async src="../../../_/js/vendor/highlight.js"></script>
+<script defer src="../../../_/js/vendor/tabs.js"></script>
+<script defer src="../../../_/js/vendor/reading-time.js"></script>
+<script src="../../../_/js/vendor/lunr.js"></script>
+<script src="../../../_/js/search-ui.js" id="search-ui-script" data-site-root-path="../../.." data-snippet-length="100" data-stylesheet="../../../_/css/search.css"></script>
+<script async src="../../../search-index.js"></script>
+  </body>
+</html>

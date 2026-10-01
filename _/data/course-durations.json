@@ -1,11 +1,11 @@
 {
-  "totalSeconds": 4009,
-  "pageCount": 15,
+  "totalSeconds": 702,
+  "pageCount": 10,
   "pages": [
     {
       "module": "ROOT",
       "page": "index.adoc",
-      "seconds": 26
+      "seconds": 25
     },
     {
       "module": "LABENV",
@@ -13,64 +13,39 @@
       "seconds": 4
     },
     {
-      "module": "chapter1",
-      "page": "index.adoc",
-      "seconds": 9
+      "module": "overview-of-rhel-for-sap-solutions",
+      "page": "overview-of-rhel-for-sap-solutions.adoc",
+      "seconds": 40
     },
     {
-      "module": "chapter1",
-      "page": "section1.adoc",
-      "seconds": 3009
+      "module": "overview-of-rhel-for-sap-solutions",
+      "page": "introduction-to-red-hat-enterprise-linux-for-sap.adoc",
+      "seconds": 152
     },
     {
-      "module": "chapter1",
-      "page": "section2.adoc",
-      "seconds": 9
+      "module": "overview-of-rhel-for-sap-solutions",
+      "page": "understanding-the-rhel-for-sap-solutions-subscription.adoc",
+      "seconds": 152
     },
     {
-      "module": "chapter1",
-      "page": "section3.adoc",
-      "seconds": 9
+      "module": "red-hat-portfolio-for-sap",
+      "page": "red-hat-portfolio-for-sap.adoc",
+      "seconds": 35
     },
     {
-      "module": "chapter1",
-      "page": "tabs-demo.adoc",
-      "seconds": 20
+      "module": "red-hat-portfolio-for-sap",
+      "page": "open-hybrid-cloud-strategy-for-sap-workloads.adoc",
+      "seconds": 150
     },
     {
-      "module": "chapter1",
-      "page": "collapsible-demo.adoc",
-      "seconds": 36
+      "module": "sap-hana-infrastructure",
+      "page": "sap-hana-infrastructure.adoc",
+      "seconds": 34
     },
     {
-      "module": "chapter1",
-      "page": "images.adoc",
-      "seconds": 841
-    },
-    {
-      "module": "chapter2",
-      "page": "index.adoc",
-      "seconds": 9
-    },
-    {
-      "module": "chapter2",
-      "page": "section1.adoc",
-      "seconds": 9
-    },
-    {
-      "module": "chapter3",
-      "page": "index.adoc",
-      "seconds": 9
-    },
-    {
-      "module": "chapter3",
-      "page": "section1.adoc",
-      "seconds": 9
-    },
-    {
-      "module": "chapter3",
-      "page": "section2.adoc",
-      "seconds": 9
+      "module": "sap-hana-infrastructure",
+      "page": "sap-hana-on-rhel-architecture-requirements.adoc",
+      "seconds": 109
     },
     {
       "module": "appendix",

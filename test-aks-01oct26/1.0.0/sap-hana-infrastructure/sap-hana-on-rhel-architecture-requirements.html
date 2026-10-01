@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>SAP HANA on RHEL architecture requirements :: SAP on RHEL</title>
+    <link rel="prev" href="sap-hana-infrastructure.html">
+    <link rel="next" href="../appendix/appendix.html">
+    <meta name="generator" content="Antora 3.2.0-alpha.12">
+    <link rel="stylesheet" href="../../../_/css/site.css">
+    <link rel="stylesheet" href="../../../_/css/vendor/tabs.css">
+    <link rel="stylesheet" href="../../../_/css/vendor/collapsible.css">
+    <link rel="stylesheet" href="../../../_/css/vendor/reading-time.css">
+    <link rel="stylesheet" href="../../../_/css/vendor/audio-transcript.css">
+    <script>var uiRootPath = '../../../_'</script>
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="https://www.redhat.com" target="_blank"><img src="../../../_/img/redhat-logo.png" height="40px" alt="Red Hat"></a>
+      <a class="navbar-item" style="font-size: 24px; color: white" href="../../..">SAP on RHEL</a>
+      <div class="navbar-item search hide-for-print">
+        <div id="search-field" class="field">
+          <input id="search-input" type="text" placeholder="Search the docs">
+        </div>
+      </div>
+      <button class="navbar-burger" data-target="topbar-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="https://github.com/RedHatQuickCourses/REPLACEREPONAME/issues" target="_blank">Report Issues</a>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="test-aks-01oct26" data-version="1.0.0">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <h3 class="title"><a href="../index.html">SAP on RHEL</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../index.html">Home</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../LABENV/index.html">Lab Environment</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../overview-of-rhel-for-sap-solutions/overview-of-rhel-for-sap-solutions.html">Overview of RHEL for SAP Solutions</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../overview-of-rhel-for-sap-solutions/introduction-to-red-hat-enterprise-linux-for-sap.html">Introduction to Red Hat Enterprise Linux for SAP</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../overview-of-rhel-for-sap-solutions/understanding-the-rhel-for-sap-solutions-subscription.html">Understanding the RHEL for SAP Solutions subscription</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../red-hat-portfolio-for-sap/red-hat-portfolio-for-sap.html">Red Hat Portfolio for SAP</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../red-hat-portfolio-for-sap/open-hybrid-cloud-strategy-for-sap-workloads.html">Open Hybrid Cloud strategy for SAP workloads</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="sap-hana-infrastructure.html">SAP HANA Infrastructure</a>
+<ul class="nav-list">
+  <li class="nav-item is-current-page" data-depth="2">
+    <a class="nav-link" href="sap-hana-on-rhel-architecture-requirements.html">SAP HANA on RHEL architecture requirements</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../appendix/appendix.html">Appendix</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">SAP on RHEL</span>
+    <span class="version">1.0.0</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <a class="title" href="../index.html">SAP on RHEL</a>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="../index.html">1.0.0</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="../index.html" class="home-link"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="../index.html">SAP on RHEL</a></li>
+    <li><a href="sap-hana-infrastructure.html">SAP HANA Infrastructure</a></li>
+    <li><a href="sap-hana-on-rhel-architecture-requirements.html">SAP HANA on RHEL architecture requirements</a></li>
+  </ul>
+</nav>
+</div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<h1 class="page">SAP HANA on RHEL architecture requirements</h1>
+<h1 id="_sap_hana_on_rhel_architecture_requirements" class="sect0"><a class="anchor" href="#_sap_hana_on_rhel_architecture_requirements"></a>SAP HANA on RHEL Architecture Requirements</h1>
+<div class="paragraph">
+<p>Running SAP HANA on Red Hat Enterprise Linux (RHEL) requires strict adherence to certified configurations to ensure performance, stability, and supportability. This section outlines the architectural requirements and foundational considerations for deploying SAP HANA workloads.</p>
+</div>
+<div class="sect1">
+<h2 id="_prerequisites_and_supportability"><a class="anchor" href="#_prerequisites_and_supportability"></a>Prerequisites and Supportability</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Before initiating a deployment, it is critical to align the infrastructure with both Red Hat and SAP guidelines.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>In official documentation, the term <strong>RHEL</strong> serves as a synonym for both <strong>RHEL for SAP HANA</strong> and <strong>RHEL for SAP Solutions</strong>. Always consult the <a href="https://www.sap.com/dmc/exp/2014-09-02-hana-hardware/enEN/index.html">Certified and Supported SAP HANA Hardware Directory</a> to ensure your hardware choice is validated for your specific workload.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="sect2">
+<h3 id="_hardware_certification"><a class="anchor" href="#_hardware_certification"></a>Hardware Certification</h3>
+<div class="paragraph">
+<p>SAP HANA requires specific hardware profiles to handle high-memory throughput and low-latency storage requirements.
+* <strong>Certified Hardware:</strong> You must use servers, storage systems, and cloud instance types that are explicitly listed in the SAP HANA Hardware Directory.
+* <strong>Verification:</strong> For non-appliance scenarios, verify that your specific server model is compatible with your RHEL release using the <a href="https://access.redhat.com/solutions/60940">Red Hat Hardware Compatibility List</a>.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_deployment_models"><a class="anchor" href="#_deployment_models"></a>Deployment Models</h3>
+<div class="paragraph">
+<p>Architectural requirements differ based on the deployment scale:
+* <strong>Scale-Up:</strong> A single-node environment where the database is contained within one server.
+* <strong>Scale-Out:</strong> A distributed environment where the database is partitioned across multiple nodes.</p>
+</div>
+<div class="paragraph">
+<p>For both models, if implementing <strong>High Availability (HA)</strong>, you must utilize the <strong>RHEL High Availability Add-On</strong>. Support for these environments follows the specific policies defined in the <a href="https://access.redhat.com/articles/2912891">Support Policies for RHEL High Availability Clusters</a>.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_hands_on_activity_verifying_system_readiness"><a class="anchor" href="#_hands_on_activity_verifying_system_readiness"></a>Hands-on Activity: Verifying System Readiness</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>This activity guides you through the process of verifying that your RHEL environment meets the basic criteria for an SAP HANA installation.</p>
+</div>
+<div class="sect2">
+<h3 id="_prerequisites"><a class="anchor" href="#_prerequisites"></a>Prerequisites</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>An active RHEL for SAP Solutions subscription.</p>
+</li>
+<li>
+<p>Root access to the target RHEL server.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_step_1_check_rhel_subscription_type"><a class="anchor" href="#_step_1_check_rhel_subscription_type"></a>Step 1: Check RHEL Subscription Type</h3>
+<div class="paragraph">
+<p>Ensure your system is registered with the correct subscription, which provides access to the necessary repositories for SAP HANA.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash"># Verify the active subscription
+subscription-manager list --consumed</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_step_2_validate_hardware_certification"><a class="anchor" href="#_step_2_validate_hardware_certification"></a>Step 2: Validate Hardware Certification</h3>
+<div class="paragraph">
+<p>Use the following command to retrieve your hardware vendor and product information to compare against the SAP HANA Hardware Directory:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash"># Retrieve hardware information
+dmidecode -t system | grep -E "Manufacturer|Product"</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_step_3_check_repository_availability"><a class="anchor" href="#_step_3_check_repository_availability"></a>Step 3: Check Repository Availability</h3>
+<div class="paragraph">
+<p>Confirm that the SAP-specific repositories are enabled to access the necessary packages for SAP HANA optimizations.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash"># List enabled repositories for SAP
+yum repolist | grep sap</code></pre>
+</div>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>If the repositories are missing, use <code>subscription-manager repos --enable=rhel-sap-for-rhel-8-x86_64-rpms</code> (adjust for your RHEL version) to enable the required channels.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_architectural_best_practices"><a class="anchor" href="#_architectural_best_practices"></a>Architectural Best Practices</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Update Services:</strong> Leverage the <strong>Update Services for SAP Solutions (E4S)</strong>. This allows you to stay on a specific RHEL minor release for an extended period, which is crucial for the lifecycle management of SAP HANA environments. Refer to the <a href="https://access.redhat.com/support/policy/updates/errata">Red Hat support policy for Update Services</a> for details.</p>
+</li>
+<li>
+<p><strong>HA Implementation:</strong> When designing for HA, ensure that your fencing mechanisms and resource agents are configured according to the Red Hat official documentation for SAP HANA clusters to prevent data corruption during failover events.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<nav class="pagination">
+  <span class="prev"><a href="sap-hana-infrastructure.html">SAP HANA Infrastructure</a></span>
+  <span class="next"><a href="../appendix/appendix.html">Appendix</a></span>
+</nav>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer">
+  <img src="../../../_/img/rhl-logo-red.png" height="40px" alt="Red Hat"  href="https://redhat.com" >
+</footer><script id="site-script" src="../../../_/js/site.js" data-ui-root-path="../../../_"></script>
+<script async src="../../../_/js/vendor/highlight.js"></script>
+<script defer src="../../../_/js/vendor/tabs.js"></script>
+<script defer src="../../../_/js/vendor/reading-time.js"></script>
+<script src="../../../_/js/vendor/lunr.js"></script>
+<script src="../../../_/js/search-ui.js" id="search-ui-script" data-site-root-path="../../.." data-snippet-length="100" data-stylesheet="../../../_/css/search.css"></script>
+<script async src="../../../search-index.js"></script>
+  </body>
+</html>
