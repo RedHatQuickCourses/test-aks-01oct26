@@ -1,0 +1,53 @@
+#  Open Hybrid Cloud strategy for SAP workloads
+
+= Open Hybrid Cloud strategy for SAP workloads
+
+== Overview
+In the modern enterprise landscape, SAP environments are no longer confined to static, on-premises data centers. To support the "Intelligent Enterprise," organizations must adopt a flexible, scalable, and resilient infrastructure. Red Hat’s Open Hybrid Cloud strategy provides a consistent foundation for SAP workloads, allowing businesses to move seamlessly between on-premises environments and public cloud providers while maintaining operational consistency.
+
+== The Red Hat Approach to SAP Workloads
+Red Hat enables SAP customers to deploy a unified, automated, and end-to-end infrastructure. Whether you are performing a greenfield deployment of SAP S/4HANA or migrating legacy systems, the Open Hybrid Cloud strategy ensures that your "Digital Core"—comprising SAP S/4HANA, BW/4HANA, and SAP HANA databases—operates with the same reliability and management standards across every footprint.
+
+Key components of this strategy include:
+
+*   **Operational Consistency:** Use the same Red Hat Enterprise Linux (RHEL) foundation across on-premises servers, private clouds, and major public cloud providers (AWS, Azure, Google Cloud).
+*   **Automation:** Utilize Red Hat Ansible Automation Platform to standardize SAP installation, configuration, and maintenance, reducing human error and deployment time.
+*   **Scalability:** Rapidly provision infrastructure to match business growth or seasonal peaks in SAP system demand.
+*   **High Availability:** Implement enterprise-grade clustering solutions to ensure that critical SAP business processes remain online, even in the event of hardware or software failure.
+
+== Hands-on Activity: Planning a Multi-Cloud SAP Deployment
+
+This activity guides you through the high-level planning required to support a hybrid architecture for SAP.
+
+=== Prerequisites
+*   Access to the Red Hat Customer Portal.
+*   Access to the SAP Service Marketplace (for SAP software binaries).
+*   A base understanding of your organization's compliance requirements for data locality.
+
+=== Step 1: Inventory Assessment
+Before deploying, categorize your SAP components. Identify which workloads are:
+1.  **Core Systems (S/4HANA):** These typically require high-performance, low-latency, and high-availability (HA) setups.
+2.  **Modern Cloud-Native Apps:** IoT, Business Networks, and Customer Experience applications that may run on containers.
+
+=== Step 2: Selecting the Infrastructure footprint
+Define where your systems will reside. For a true Hybrid Cloud strategy:
+*   **On-Premises:** Deploy RHEL for SAP Solutions to leverage existing hardware investments.
+*   **Public Cloud:** Utilize the pre-configured "SAP-certified" images available in cloud marketplaces to ensure full support and performance optimization.
+
+=== Step 3: Standardizing with Automation
+Create a standard baseline using Ansible Playbooks to ensure that every RHEL instance—regardless of location—has the necessary tuning for SAP HANA:
+*   Ensure `tuned` profiles (e.g., `sap-hana`) are applied.
+*   Verify that required kernel parameters are set to SAP-compliant values.
+
+[source,bash]
+----
+# Example: Apply the SAP HANA tuned profile to your RHEL instance
+tuned-adm profile sap-hana
+----
+
+=== Step 4: Verification
+Confirm that your hybrid footprint is reporting correctly to your management consoles (such as Red Hat Insights for RHEL). This ensures that you have visibility into the health and security of your SAP estate, regardless of whether it is running on-premises or in the cloud.
+
+== Troubleshooting Guidance
+*   **Consistency Issues:** If an SAP system behaves differently in the cloud compared to on-premises, verify that the same RHEL for SAP Solutions repositories are being used. Cloud-specific repositories often contain specialized drivers and optimization packages required for SAP performance.
+*   **High Availability:** Ensure that your cluster fencing (STONITH) mechanisms are configured according to the specific requirements of your cloud provider, as these differ significantly from traditional hardware-based IPMI/ILO fencing.

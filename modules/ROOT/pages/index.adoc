@@ -1,22 +1,25 @@
-= An Example Quick Course
+=  SAP on RHEL
 :navtitle: Home
 
 == Introduction
 
-Course Title: Course title FIXME
+Course Title:  SAP on RHEL
 
 Description:
 Course description FIXME
 
-Duration: pass:[<span class="course-total-duration" aria-live="polite">…</span>]
+Duration: FIXME hours
 
-== Objectives
+== Topics covered in this course
 
-On completing this course, you should be able to:
 
-* Observable, measurable objective...
-* Observable, measurable objective...
-* Observable, measurable objective...
+*  Overview of RHEL for SAP Solutions
+
+*  Red Hat Portfolio for SAP
+
+*  SAP HANA Infrastructure
+
+
 
 == Prerequisites
 

@@ -1,10 +1,14 @@
-name: REPLACEREPONAME
-title: FIXME Course Title
-version: 1
+name: test-aks-01oct26
+title:  SAP on RHEL
+version: 1.0.0
 nav:
 - modules/ROOT/nav.adoc
 - modules/LABENV/nav.adoc
-- modules/chapter1/nav.adoc
-- modules/chapter2/nav.adoc
-- modules/chapter3/nav.adoc
+
+- modules/overview-of-rhel-for-sap-solutions/nav.adoc
+
+- modules/red-hat-portfolio-for-sap/nav.adoc
+
+- modules/sap-hana-infrastructure/nav.adoc
+
 - modules/appendix/nav.adoc

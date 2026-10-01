@@ -1,0 +1,2 @@
+* xref:red-hat-portfolio-for-sap.adoc[]
+** xref:open-hybrid-cloud-strategy-for-sap-workloads.adoc[]

@@ -1,0 +1,11 @@
+#  SAP HANA Infrastructure
+
+= SAP HANA Infrastructure
+
+SAP HANA infrastructure on RHEL serves as the foundation for modern SAP S/4HANA environments. Key architectural considerations include:
+
+*   **Deployment Models:** Support for both scale-up and scale-out configurations based on performance and data volume requirements.
+*   **High Availability:** Integration with RHEL HA solutions, such as Pacemaker, to automate failover processes and ensure service continuity.
+*   **System Replication (HSR):** Implementation of HANA System Replication across nodes to maintain data synchronization and enable rapid disaster recovery.
+*   **RHEL Optimization:** Leveraging specialized RHEL for SAP Solutions subscriptions to meet the performance, security, and reliability requirements of the SAP kernel and database layer.
+*   **Standardized Setup:** Adherence to identical node configurations to facilitate seamless clustering and environment management.

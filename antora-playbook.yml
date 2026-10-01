@@ -1,6 +1,6 @@
 site:
-  title: FIXME Course Title
-  start_page: REPLACEREPONAME::index.adoc
+  title:  SAP on RHEL
+  start_page: test-aks-01oct26::index.adoc
 
 antora:
   extensions:
