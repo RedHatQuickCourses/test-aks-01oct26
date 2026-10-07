@@ -1,1 +1,1 @@
-Now, let’s discuss how to access the lab environment for this hands-on training. Please follow the provided instructions to log in and prepare your workspace for the exercises ahead.
+Please follow the provided instructions to log in and prepare your workspace for the exercises ahead.
