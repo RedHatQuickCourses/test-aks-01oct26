@@ -1,4 +1,6 @@
 = Overview of RHEL for SAP Solutions
+:page-audio-src: overview-of-rhel-for-sap-solutions.wav
+:page-transcript-src: overview-of-rhel-for-sap-solutions.txt
 
 Red Hat Enterprise Linux (RHEL) for SAP Solutions provides a standardized, automated infrastructure designed to support SAP workloads, including SAP S/4HANA, across on-premises and cloud environments. 
 

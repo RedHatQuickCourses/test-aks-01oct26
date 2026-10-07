@@ -1,4 +1,6 @@
 = Appendix
+:page-audio-src: appendix.wav
+:page-transcript-src: appendix.txt
 
 FIXME: Content for Appendix...
 

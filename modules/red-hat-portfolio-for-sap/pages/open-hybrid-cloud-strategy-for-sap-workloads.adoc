@@ -1,4 +1,6 @@
 = Open Hybrid Cloud strategy for SAP workloads
+:page-audio-src: open-hybrid-cloud-strategy-for-sap-workloads.wav
+:page-transcript-src: open-hybrid-cloud-strategy-for-sap-workloads.txt
 
 == Overview
 In the modern enterprise landscape, SAP environments are no longer confined to static, on-premises data centers. To support the "Intelligent Enterprise," organizations must adopt a flexible, scalable, and resilient infrastructure. Red Hat’s Open Hybrid Cloud strategy provides a consistent foundation for SAP workloads, allowing businesses to move seamlessly between on-premises environments and public cloud providers while maintaining operational consistency.

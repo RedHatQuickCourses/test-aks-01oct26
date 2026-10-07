@@ -1,4 +1,6 @@
 = Understanding the RHEL for SAP Solutions subscription
+:page-audio-src: understanding-the-rhel-for-sap-solutions-subscription.wav
+:page-transcript-src: understanding-the-rhel-for-sap-solutions-subscription.txt
 
 The RHEL for SAP Solutions subscription is more than just an operating system license; it is an integrated, specialized platform designed to meet the rigorous performance, reliability, and lifecycle requirements of SAP environments. By consolidating essential components into a single subscription, Red Hat enables organizations to build a standardized, automated, and resilient foundation for their SAP Digital Core.
 

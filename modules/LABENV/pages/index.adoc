@@ -1,3 +1,5 @@
 = Lab Environment
+:page-audio-src: index.wav
+:page-transcript-src: index.txt
 
 FIXME: Instructions for accessing the lab environment for this hands-on based training.

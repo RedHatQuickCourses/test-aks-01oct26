@@ -1,4 +1,6 @@
 = Introduction to Red Hat Enterprise Linux for SAP
+:page-audio-src: introduction-to-red-hat-enterprise-linux-for-sap.wav
+:page-transcript-src: introduction-to-red-hat-enterprise-linux-for-sap.txt
 
 Red Hat Enterprise Linux (RHEL) for SAP Solutions is a purpose-built operating system environment designed to meet the rigorous performance, stability, and reliability requirements of SAP workloads. As organizations migrate to SAP S/4HANA or modernize their existing Digital Core, RHEL serves as the foundation for an Open Hybrid Cloud strategy, allowing for consistent operations across on-premises data centers and public cloud providers.
 
