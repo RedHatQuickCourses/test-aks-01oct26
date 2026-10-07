@@ -1,6 +1,6 @@
 {
-  "totalSeconds": 690,
-  "pageCount": 10,
+  "totalSeconds": 367,
+  "pageCount": 5,
   "pages": [
     {
       "module": "ROOT",
@@ -26,31 +26,6 @@
       "module": "overview-of-rhel-for-sap-solutions",
       "page": "understanding-the-rhel-for-sap-solutions-subscription.adoc",
       "seconds": 150
-    },
-    {
-      "module": "red-hat-portfolio-for-sap",
-      "page": "red-hat-portfolio-for-sap.adoc",
-      "seconds": 34
-    },
-    {
-      "module": "red-hat-portfolio-for-sap",
-      "page": "open-hybrid-cloud-strategy-for-sap-workloads.adoc",
-      "seconds": 148
-    },
-    {
-      "module": "sap-hana-infrastructure",
-      "page": "sap-hana-infrastructure.adoc",
-      "seconds": 33
-    },
-    {
-      "module": "sap-hana-infrastructure",
-      "page": "sap-hana-on-rhel-architecture-requirements.adoc",
-      "seconds": 107
-    },
-    {
-      "module": "appendix",
-      "page": "appendix.adoc",
-      "seconds": 1
     }
   ]
 }
