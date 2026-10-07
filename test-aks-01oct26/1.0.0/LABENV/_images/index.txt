@@ -1,1 +1,1 @@
-Please follow the provided instructions to log in and prepare your workspace for the exercises ahead.
+To begin this hands-on training, you will need to access the lab environment. Please follow the provided instructions to log in and prepare your workspace for the exercises ahead. Once you have successfully accessed the environment, you will be ready to proceed with the first module.
