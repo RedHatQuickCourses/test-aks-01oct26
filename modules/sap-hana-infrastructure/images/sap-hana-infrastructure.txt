@@ -1,0 +1,11 @@
+When building the foundation for modern SAP S/4HANA environments, it is essential to understand the SAP HANA infrastructure on Red Hat Enterprise Linux. Let’s look at the key architectural considerations you need to keep in mind.
+
+First, consider your deployment model. You have the flexibility to choose between scale-up and scale-out configurations, which allows you to tailor your setup to your specific performance needs and data volume requirements.
+
+Second, high availability is critical. To ensure service continuity, you can integrate your infrastructure with Red Hat Enterprise Linux high availability solutions, such as Pacemaker, to automate your failover processes.
+
+Third, for data protection, you should implement HANA System Replication, or HSR. By maintaining synchronization across nodes, you enable rapid disaster recovery.
+
+Fourth, performance and reliability are paramount. You should leverage specialized Red Hat Enterprise Linux for SAP Solutions subscriptions. These are designed to meet the rigorous performance, security, and reliability requirements of both the SAP kernel and the database layer.
+
+Finally, always aim for a standardized setup. Adhering to identical node configurations across your environment is a best practice that facilitates seamless clustering and simplifies overall management.
