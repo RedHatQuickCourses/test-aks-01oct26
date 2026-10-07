@@ -1,11 +1,1 @@
-Welcome to the course titled, SAP on RHEL.
-
-In this training, we will explore how to effectively implement and manage SAP environments on the Red Hat Enterprise Linux platform.
-
-Throughout this course, we will cover three primary topics. First, we will provide an overview of RHEL for SAP Solutions. Next, we will examine the Red Hat portfolio specifically designed for SAP. Finally, we will discuss the infrastructure requirements for SAP HANA.
-
-To get the most out of this material, you should already have some foundational experience. Please ensure you have completed the necessary prerequisite courses or have equivalent professional experience in this domain.
-
-Before we begin, a quick note regarding our materials: This publication contains content or media that is generated or assisted by AI tools. Please be assured that all training deliverables have primarily human authorship, and every piece of content has been reviewed by a human domain expert to ensure accuracy and quality.
-
-Let’s get started.
+Please follow the provided instructions to log in and prepare your workspace for the exercises ahead.
