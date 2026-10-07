@@ -1,0 +1,13 @@
+Red Hat Enterprise Linux for SAP Solutions provides a standardized, automated infrastructure specifically designed to support SAP workloads, including SAP S/4HANA, across both on-premises and cloud environments.
+
+The subscription includes several key components that work together to support your SAP landscape. First, there is the RHEL Foundation, which serves as the core enterprise Linux operating system. 
+
+To maintain continuous service uptime for your SAP applications, the subscription includes the High Availability Add-on. 
+
+For lifecycle management and proactive maintenance, you have access to management tools, including Smart Management and Red Hat Insights, which provides proactive risk analytics and automated mitigation. 
+
+Efficiency is further enhanced through automation. You can utilize RHEL System Roles for SAP, which integrate with the Red Hat Ansible Automation Platform to streamline both your initial SAP deployments and ongoing day-two operations. 
+
+The environment is also fine-tuned for your specific needs, thanks to SAP Optimization, which includes pre-configured, SAP-specific libraries and settings to ensure your system performs at its best. 
+
+Finally, the subscription offers extended lifecycle support. Through Update Services for SAP Solutions, you gain support for specific RHEL minor releases for up to four years, ensuring stability for your long-term projects.
