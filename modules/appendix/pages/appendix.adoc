@@ -1,9 +1,0 @@
-= Appendix
-:page-audio-src: appendix.wav
-:page-transcript-src: appendix.txt
-
-FIXME: Content for Appendix...
-
-== Resources
-
-link:{attachmentsdir}/{page-component-name}.pdf[Download Course PDF]

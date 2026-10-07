@@ -1,2 +1,0 @@
-* xref:sap-hana-infrastructure.adoc[]
-** xref:sap-hana-on-rhel-architecture-requirements.adoc[]
