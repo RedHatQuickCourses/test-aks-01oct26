@@ -1,1 +1,33 @@
-To begin this hands-on training, you will need to access the lab environment. Please follow the provided instructions to log in and prepare your workspace for the exercises ahead. Once you have successfully accessed the environment, you will be ready to proceed with the first module.
+Welcome to this introduction to Red Hat Enterprise Linux for SAP Solutions. 
+
+Red Hat Enterprise Linux, or RHEL, for SAP Solutions is a purpose-built operating system environment designed to meet the rigorous performance, stability, and reliability requirements of SAP workloads. As organizations migrate to SAP S/4HANA or modernize their existing digital core, RHEL serves as the foundation for an open hybrid cloud strategy. This allows for consistent operations across both your on-premises data centers and your public cloud providers.
+
+Now, you might wonder why you should choose RHEL specifically for SAP. SAP applications are mission-critical; they often act as the central nervous system of an enterprise. Deploying these workloads on standard Linux distributions can lead to performance bottlenecks or a lack of the specialized support you need. RHEL for SAP Solutions addresses these challenges by bundling critical components specifically tuned for the SAP ecosystem. Unlike a generic operating system, this subscription provides an automated, end-to-end infrastructure engineered to minimize downtime, simplify management, and ensure compliance with SAP’s technical requirements.
+
+The RHEL for SAP Solutions subscription is a comprehensive suite of tools designed to manage the entire lifecycle of an SAP environment. It includes several key components:
+
+First is the core Red Hat Enterprise Linux, which provides a stable foundation optimized for high-performance applications. Next, the High Availability add-on provides the clustering framework necessary to keep your SAP services, like SAP HANA or SAP NetWeaver, operational during hardware or service failures. 
+
+You also have Red Hat Smart Management, which simplifies lifecycle management by helping administrators manage patch levels and configurations across large-scale environments. Red Hat Insights offers an analytics-driven approach, providing proactive optimization, identifying security risks, and suggesting automated mitigations before they impact production.
+
+Additionally, you have access to RHEL System Roles for SAP. These are pre-defined automation roles that enforce consistent configurations, such as kernel parameters and storage tuning, to match SAP best practices. The subscription also includes SAP-specific software components and optimized libraries. Finally, Update Services for SAP Solutions offers extended support for specific minor RHEL releases—up to four years from general availability—which allows you to maintain stable environments while managing longer update cycles.
+
+Beyond these OS components, Red Hat facilitates the full automation of SAP S/4HANA migrations and daily operations through integration with the Red Hat Ansible Automation Platform. By combining RHEL for SAP Solutions with Ansible, your team can transform manual, error-prone deployment processes into repeatable, standardized workflows. This significantly reduces the time it takes to see value from your new SAP initiatives. 
+
+A useful tip for organizations scaling their SAP footprint: leverage Red Hat Insights. Think of it as a continuous health-check tool that maps your RHEL configuration directly against known SAP support notes and security advisories to help you prevent potential outages.
+
+Now, let’s move to a hands-on activity where you will identify the SAP-specific components on your system. 
+
+To begin, ensure you meet the prerequisites: you must have a system registered with a valid RHEL for SAP Solutions subscription, and you will need root or sudo access.
+
+First, let's check your enabled repositories. Run the following command to view your currently enabled repositories and ensure the SAP-specific ones are active:
+`subscription-manager repos --list-enabled | grep -i sap`
+
+Next, step two is to verify your SAP-tuned profiles. RHEL for SAP includes pre-configured tuned profiles. To see which ones are available for your environment, run:
+`tuned-adm list`
+Look for profiles prefixed with "sap-", such as "sap-hana" or "sap-netweaver". These profiles are important because they automatically adjust kernel parameters, disk I/O schedulers, and memory settings to align with SAP's performance requirements.
+
+Finally, step three is to apply an SAP profile. If your server is hosting an SAP HANA database, apply the SAP HANA tuned profile by running:
+`sudo tuned-adm profile sap-hana`
+
+By executing these steps, you have ensured that your operating system is not just running, but is specifically optimized for your SAP HANA workload requirements.
