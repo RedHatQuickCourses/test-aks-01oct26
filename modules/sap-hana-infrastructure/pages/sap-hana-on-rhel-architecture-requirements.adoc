@@ -1,5 +1,3 @@
-#  SAP HANA on RHEL architecture requirements
-
 = SAP HANA on RHEL Architecture Requirements
 
 Running SAP HANA on Red Hat Enterprise Linux (RHEL) requires strict adherence to certified configurations to ensure performance, stability, and supportability. This section outlines the architectural requirements and foundational considerations for deploying SAP HANA workloads.

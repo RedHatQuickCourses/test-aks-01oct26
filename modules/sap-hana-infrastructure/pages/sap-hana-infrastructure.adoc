@@ -1,5 +1,3 @@
-#  SAP HANA Infrastructure
-
 = SAP HANA Infrastructure
 
 SAP HANA infrastructure on RHEL serves as the foundation for modern SAP S/4HANA environments. Key architectural considerations include:

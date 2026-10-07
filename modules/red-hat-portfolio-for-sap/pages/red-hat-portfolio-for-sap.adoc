@@ -1,5 +1,3 @@
-#  Red Hat Portfolio for SAP
-
 = Red Hat Portfolio for SAP
 
 The Red Hat portfolio provides an automated, end-to-end open hybrid cloud infrastructure designed to support SAP and non-SAP workloads across on-premises and cloud environments. It enables organizations to standardize their SAP S/4HANA deployments on a reliable platform.

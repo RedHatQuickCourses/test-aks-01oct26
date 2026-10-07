@@ -1,5 +1,3 @@
-#  Open Hybrid Cloud strategy for SAP workloads
-
 = Open Hybrid Cloud strategy for SAP workloads
 
 == Overview
